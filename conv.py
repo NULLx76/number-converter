@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+import os
+
+
+def cls():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 while True:
     menu = {
         '1': "Binary",
@@ -40,7 +46,8 @@ while True:
             print int(selectionBD, 2)
             break
         else:
-            print("Not a valid choice, please try again")
+            cls()
+            print("Not a valid choice, please try again \n")
 
     elif selection == '2':
         menuH = {
@@ -67,7 +74,8 @@ while True:
             print int(selectionHD, 16)
             break
         else:
-            print("Not a valid choice, please try again")
+            cls()
+            print("Not a valid choice, please try again \n")
 
     elif selection == '3':
         menuD = {
@@ -94,9 +102,11 @@ while True:
             print hex(int(selectionDH, 10))[2:]
             break
         else:
-            print("Not a valid choice, please try again")
+            cls()
+            print("Not a valid choice, please try again \n")
 
     elif selection == '4':
         break
     else:
-        print "Unknown Option Selected!"
+        cls()
+        print "Unknown Option Selected! \n"
