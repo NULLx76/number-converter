@@ -1,13 +1,12 @@
 #!/usr/bin/python
 
-menu = {
-    '1': "Binary",
-    '2': "Hex",
-    '3': "Decimal",
-    '4': "Exit"
-}
-
 while True:
+    menu = {
+        '1': "Binary",
+        '2': "Hex",
+        '3': "Decimal",
+        '4': "Exit"
+    }
     options = menu.keys()
     options.sort()
 
@@ -76,6 +75,7 @@ while True:
             '2': "Hex"
         }
         optionsD = menuD.keys()
+        optionsD.sort()
 
         print("Convert To:")
         for entryD in optionsD:
