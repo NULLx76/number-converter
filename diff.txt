@@ -1,0 +1,96 @@
+16c16
+<     options = menu.keys()
+---
+>     options = list(menu.keys())
+21c21
+<         print entry, menu[entry]
+---
+>         print(entry, menu[entry])
+23c23
+<     selection = raw_input("Please Select:")
+---
+>     selection = input("Please Select:")
+29c29
+<         optionsB = menuB.keys()
+---
+>         optionsB = list(menuB.keys())
+34c34
+<             print entryB, menuB[entryB]
+---
+>             print(entryB, menuB[entryB])
+36c36
+<         selectionB = raw_input("Please Select:")
+---
+>         selectionB = input("Please Select:")
+40,41c40,41
+<             selectionBH = raw_input("Enter your number:")
+<             print hex(int(selectionBH, 2))[2:]
+---
+>             selectionBH = input("Enter your number:")
+>             print(hex(int(selectionBH, 2))[2:])
+45,46c45,46
+<             selectionBD = raw_input("Enter your number:")
+<             print int(selectionBD, 2)
+---
+>             selectionBD = input("Enter your number:")
+>             print(int(selectionBD, 2))
+57c57
+<         optionsH = menuH.keys()
+---
+>         optionsH = list(menuH.keys())
+62c62
+<             print entryH, menuH[entryH]
+---
+>             print(entryH, menuH[entryH])
+64c64
+<         selectionH = raw_input("Please Select:")
+---
+>         selectionH = input("Please Select:")
+67c67
+<             selectionHB = raw_input("Enter your number:")
+---
+>             selectionHB = input("Enter your number:")
+69c69
+<             print bin(int(selectionHB, 16))[2:]
+---
+>             print(bin(int(selectionHB, 16))[2:])
+72c72
+<             selectionHD = raw_input("Enter your number:")
+---
+>             selectionHD = input("Enter your number:")
+74c74
+<             print int(selectionHD, 16)
+---
+>             print(int(selectionHD, 16))
+85c85
+<         optionsD = menuD.keys()
+---
+>         optionsD = list(menuD.keys())
+90c90
+<             print entryD, menuD[entryD]
+---
+>             print(entryD, menuD[entryD])
+92c92
+<         selectionD = raw_input("Please Select:")
+---
+>         selectionD = input("Please Select:")
+95c95
+<             selectionD = raw_input("Enter your number:")
+---
+>             selectionD = input("Enter your number:")
+97c97
+<             print bin(int(selectionD, 10))[2:]
+---
+>             print(bin(int(selectionD, 10))[2:])
+100c100
+<             selectionDH = raw_input("Enter your number:")
+---
+>             selectionDH = input("Enter your number:")
+102c102
+<             print hex(int(selectionDH, 10))[2:]
+---
+>             print(hex(int(selectionDH, 10))[2:])
+112c112
+<         print "Unknown Option Selected! \n"
+---
+>         print("Unknown Option Selected! \n")
